@@ -10,8 +10,21 @@ Core technologies
 
 Goals
 -----
+* (Almost) zero touch service deployment
 * Highly available
 * Horizontally scalable
+
+Getting Started
+===============
+
+Usage
+-----
+* Install Ansible on your management workstation
+* Clone the looking-glass and looking-glass-secrets repos
+* Generate a public/private keypair with a password
+* Run 'ssh-agent bash'
+* Run 'ssh-add ~/.ssh/id_rsa'
+* Run 'ansible-playbook site.yml -i inventory'
 
 Contact Us
 ==========
