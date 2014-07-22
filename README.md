@@ -20,7 +20,7 @@ Getting Started
 Usage
 -----
 * Install Ansible on your management workstation
-* Clone the looking-glass and looking-glass-secrets repos
+* Clone the looking-glass and [looking-glass-secrets](https://github.com/Zorlin/looking-glass-secrets/) repos
 * Generate a public/private keypair with a password
 * Run 'ssh-agent bash'
 * Run 'ssh-add ~/.ssh/id_rsa'
