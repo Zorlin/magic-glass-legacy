@@ -1,8 +1,13 @@
 ---
 # file: site.yml
+- user: glass
+  sudo: yes
+  roles:
+    - base
+
 #- include bt-tracker.yml
 #- include dbservers.yml
 #- include domain-controllers.yml
 #- include fileservers.yml
-- include: loadbalancers.yml
+#- include: loadbalancers.yml
 #- include webservers.yml
