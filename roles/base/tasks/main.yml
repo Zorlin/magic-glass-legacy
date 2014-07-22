@@ -3,3 +3,10 @@
 
 - name: SSH - Add RSA key to the remote host
   authorized_key: user='{{ user }}' key="{{ lookup('file', '../../../../looking-glass-secrets/ssh/id_rsa.pub') }}"
+
+- name: Sudo - Create a new "sudoers" file after passing validation with visudo
+  template: src=sudo/sudoers dest=/etc/sudoers validate='/usr/sbin/visudo -cf %s'
+
+- name: Sudo - Add an additional "sudoers" policy to allow for passwordless sudo
+  template: src=sudo/sudoers.d/glass dest=/etc/sudoers.d/glass validate='/usr/sbin/visudo -cf %s'
+
