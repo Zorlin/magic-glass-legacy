@@ -1,6 +1,7 @@
 ---
 # file: site.yml
-- user: glass
+- hosts: all
+  user: '{{ user }}'
   sudo: yes
   roles:
     - base
