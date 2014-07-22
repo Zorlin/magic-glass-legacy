@@ -1,0 +1,6 @@
+---
+# name: Install and configure basic settings on a host.
+
+- name: SSH - Add RSA key to the remote host
+  authorized_key: user='{{ user }}' key="{{ lookup('file', '../looking-glass-secrets/ssh/id_rsa.pub') }}"
+
