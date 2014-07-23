@@ -5,7 +5,6 @@ Looking Glass is a set of technologies to create, manage and maintain a company'
 Core technologies
 -----------------
 * Ansible
-* CoreOS
 * LizardFS
 
 Goals
