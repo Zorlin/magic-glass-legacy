@@ -10,5 +10,5 @@
 #- include dbservers.yml
 #- include domain-controllers.yml
 #- include fileservers.yml
-#- include: loadbalancers.yml
+- include: loadbalancers.yml
 #- include webservers.yml
