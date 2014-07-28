@@ -36,3 +36,11 @@ Contact Us
 IRC
 ---
 You can find us on IRC at #lookingglass on irc.freenode.net. The IRC channel is a good place to get help or discuss development of Looking Glass.
+
+Project Details
+===============
+
+License
+-------
+looking-glass and looking-glass-secrets are made available under the MIT license. See the [LICENSE](LICENSE) file for details.
+
