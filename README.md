@@ -44,3 +44,8 @@ License
 -------
 looking-glass and looking-glass-secrets are made available under the MIT license. See the [LICENSE](LICENSE) file for details.
 
+Branch Info
+-----------
+* Releases are named after Cloud Cult songs.
+* The 'master' branch corresponds to the release actively under development.
+* Various release-X.Y branches exist for previous releases.
