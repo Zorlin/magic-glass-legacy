@@ -7,4 +7,5 @@
 [loadbalancers]
 localhost
 
-
+[dhcp-servers]
+localhost

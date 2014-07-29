@@ -1,0 +1,18 @@
+---
+# name: Install and configure ISC dhcpd
+
+#- name: Apt - Enable the wheezy-backports repository.
+#  apt_repository: repo='deb http://cdn.debian.net/debian wheezy-backports main' state=present
+#  notify:
+#  - update apt cache
+
+#- name: Apt - Add an apt signing key for the HAProxy dedicated repository.
+#  apt_key: url=http://haproxy.debian.net/bernat.debian.org.gpg state=present
+
+#- name: Apt - Add the HAProxy dedicated repository.
+#  apt_repository: repo='deb http://haproxy.debian.net wheezy-backports main' state=present
+#  notify:
+#  - update apt cache
+
+- name: Apt - Install ISC dhpcd
+  apt: pkg=isc-dhcp-server state=installed

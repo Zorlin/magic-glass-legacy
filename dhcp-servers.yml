@@ -1,0 +1,8 @@
+---
+# file: dhcp-servers.yml
+- hosts: dhcp-servers
+  user: '{{ user }}'
+  sudo: yes
+  roles:
+    - { role: dhcp-servers-dnsmasq, when: dhcp_daemon == 'dnsmasq' }
+    - { role: dhcp-servers-dhcpd, when: dhcp_daemon == 'isc' }
