@@ -1,5 +1,7 @@
 group_vars
 group_vars/
+vars
+vars/
 development
 test
 production

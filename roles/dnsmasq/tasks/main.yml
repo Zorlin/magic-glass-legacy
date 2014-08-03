@@ -3,3 +3,9 @@
 
 - name: Apt - Install dnsmasq
   apt: pkg=dnsmasq state=installed
+
+- name: dnsmasq - Install main configuration file
+  template: file=dnsmasq.conf.j2 dest=/etc/dnsmasq.conf owner=root group=root mode=0644
+
+- name: dnsmasq - Ensure configuration directory exists
+  
