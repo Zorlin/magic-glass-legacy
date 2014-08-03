@@ -1,8 +1,8 @@
 ---
 # name: Install and configure basic settings on a host.
 
-#- include: centos.yml
-#  when: ansible_distribution == 'CentOS'
+- include: centos.yml
+  when: ansible_distribution == 'CentOS'
 
 - include: debian.yml
   when: ansible_distribution == 'Debian'

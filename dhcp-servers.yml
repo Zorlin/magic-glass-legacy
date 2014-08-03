@@ -4,5 +4,6 @@
   user: '{{ user }}'
   sudo: yes
   roles:
+    - { role: dnsmasq, when: dhcp_daemon == 'dnsmasq' }
     - { role: dhcp-servers-dnsmasq, when: dhcp_daemon == 'dnsmasq' }
     - { role: dhcp-servers-dhcpd, when: dhcp_daemon == 'isc' }

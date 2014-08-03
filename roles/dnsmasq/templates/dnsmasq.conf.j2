@@ -1,0 +1,46 @@
+# Configuration file for dnsmasq.
+#
+# Format is one option per line, legal options are the same
+# as the long options legal on the command line. See
+# "/usr/sbin/dnsmasq --help" or "man 8 dnsmasq" for details.
+
+# If you want dnsmasq to change uid and gid to something other
+# than the default, edit the following lines.
+#user=
+#group=
+
+# If you want dnsmasq to listen for DHCP and DNS requests only on
+# specified interfaces (and the loopback) give the name of the
+# interface (eg eth0) here.
+# Repeat the line for more than one interface.
+#interface=
+# Or you can specify which interface _not_ to listen on
+#except-interface=
+# Or which to listen on by address (remember to include 127.0.0.1 if
+# you use this.)
+#listen-address=
+# If you want dnsmasq to provide only DNS service on an interface,
+# configure it as shown above, and then use the following line to
+# disable DHCP and TFTP on it.
+#no-dhcp-interface=
+
+# On systems which support it, dnsmasq binds the wildcard address,
+# even when it is listening on only some interfaces. It then discards
+# requests that it shouldn't reply to. This has the advantage of
+# working even when interfaces come and go and change address. If you
+# want dnsmasq to really bind only the interfaces it is listening on,
+# uncomment this option. About the only time you may need this is when
+# running another nameserver on the same machine.
+#bind-interfaces
+
+# Set the domain for dnsmasq. this is optional, but if it is set, it
+# does the following things.
+# 1) Allows DHCP hosts to have fully qualified domain names, as long
+#     as the domain part matches this setting.
+# 2) Sets the "domain" DHCP option thereby potentially setting the
+#    domain of all systems configured by DHCP
+# 3) Provides the domain part for "expand-hosts"
+domain={{domain}}
+
+# Include another lot of configuration options.
+conf-dir=/etc/dnsmasq.d
