@@ -1,12 +1,13 @@
 ---
 # name: Install and configure basic settings on a host.
 
-- name: SSH - Add RSA key to the remote host
-  authorized_key: user='{{ user }}' key="{{ lookup('file', '../../../../looking-glass-secrets/ssh/id_rsa.pub') }}"
+#- include: centos.yml
+#  when: ansible_distribution == 'CentOS'
 
-- name: Sudo - Create a new "sudoers" file after passing validation with visudo
-  template: src=sudo/sudoers dest=/etc/sudoers validate='/usr/sbin/visudo -cf %s'
+- include: debian.yml
+  when: ansible_distribution == 'Debian'
 
-- name: Sudo - Add an additional "sudoers" policy to allow for passwordless sudo
-  template: src=sudo/sudoers.d/glass dest=/etc/sudoers.d/glass validate='/usr/sbin/visudo -cf %s'
+# Ubuntu/Debian are the same for this role.
+- include: debian.yml
+  when: ansible_distribution == 'Ubuntu'
 
