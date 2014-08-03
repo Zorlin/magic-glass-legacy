@@ -1,0 +1,10 @@
+---
+# name: Install and configure a loadbalancer on Debian 7+
+
+- name: Apt - Add the HAProxy dedicated repository.
+  apt_repository: repo='ppa:vbernat/haproxy-1.5' state=present
+  notify:
+  - update apt cache
+
+- name: Apt - Install HAProxy.
+  apt: pkg=haproxy state=installed

@@ -1,18 +1,11 @@
 ---
 # name: Install and configure a loadbalancer.
 
-- name: Apt - Enable the wheezy-backports repository.
-  apt_repository: repo='deb http://cdn.debian.net/debian wheezy-backports main' state=present
-  notify:
-  - update apt cache
+#- include: centos.yml
+#  when: ansible_distribution == 'CentOS'
 
-- name: Apt - Add an apt signing key for the HAProxy dedicated repository.
-  apt_key: url=http://haproxy.debian.net/bernat.debian.org.gpg state=present
+- include: debian.yml
+  when: ansible_distribution == 'Debian'
 
-- name: Apt - Add the HAProxy dedicated repository.
-  apt_repository: repo='deb http://haproxy.debian.net wheezy-backports main' state=present
-  notify:
-  - update apt cache
-
-- name: Apt - Install HAProxy.
-  apt: pkg=haproxy state=installed default-release=wheezy-backports
+- include: ubuntu.yml
+  when: ansible_distribution == 'Ubuntu'
