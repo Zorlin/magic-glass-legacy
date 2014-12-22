@@ -10,8 +10,8 @@ Core technologies
 Goals
 -----
 * (Almost) zero touch service deployment
-* Highly available
-* Horizontally scalable
+* Builds highly available services
+* Builds horizontally scalable services
 
 Getting Started
 ===============
