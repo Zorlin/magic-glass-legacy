@@ -1,5 +1,7 @@
 Looking Glass
 ============
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/getglass/looking-glass?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Looking Glass is a set of technologies to create, manage and maintain a company's networks and services. 
 
 Core technologies
