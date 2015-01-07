@@ -24,8 +24,8 @@ Usage
 First-time usage:
 * Install Ansible and sshpass on your management workstation
 
-`git clone https://github.com/getglass/looking-glass.git
-git clone https://github.com/getglass/looking-glass-secrets.git`
+`git clone https://github.com/getglass/looking-glass.git`
+`git clone https://github.com/getglass/looking-glass-secrets.git`
 * Follow the instructions for the looking-glass-secrets repository
 * Run 'sudo adduser glass' and 'sudo adduser glass sudo' on machines you want to manage.
 * Run 'ansible-playbook site.yml -i inventory --ask-pass --ask-sudo-pass'
