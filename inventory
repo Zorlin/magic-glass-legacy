@@ -4,8 +4,12 @@
 # (highly recommended) you should use a separate inventory file for
 # each.
 
-[loadbalancers]
+[localhost]
 localhost
 
+[noop]
+ansible-centos6
+ansible-ubuntu1204
+
+[loadbalancers]
 [dhcp-servers]
-localhost
