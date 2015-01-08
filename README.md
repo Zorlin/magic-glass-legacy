@@ -2,6 +2,7 @@ Looking Glass
 ============
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/getglass/looking-glass?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Looking Glass is a set of technologies to create, manage and maintain a company's networks and services. 
 
 Core technologies
@@ -22,15 +23,15 @@ Usage
 -----
 First-time usage:
 * Install Ansible and sshpass on your management workstation
-* Clone the looking-glass and [looking-glass-secrets](https://github.com/Zorlin/looking-glass-secrets/) repos
+* Clone the Looking Glass repositories.
+
+`git clone https://github.com/getglass/looking-glass.git`
+
+`git clone https://github.com/getglass/looking-glass-secrets.git`
+
 * Follow the instructions for the looking-glass-secrets repository
 * Run 'sudo adduser glass' and 'sudo adduser glass sudo' on machines you want to manage.
 * Run 'ansible-playbook site.yml -i inventory --ask-pass --ask-sudo-pass'
-
-Future usage:
-* Run 'ssh-agent bash'
-* Run 'ssh-add ../looking-glass-secrets/ssh/id_rsa'
-* Run 'ansible-playbook site.yml -i inventory'
 
 Contact Us
 ==========
