@@ -19,8 +19,8 @@
 #  template: src=sudo/sudoers dest=/etc/sudoers validate='/usr/sbin/visudo -cf %s'
 
 - name: Sudo - Add an additional "sudoers" policy to allow for passwordless sudo
-  template: src=sudo/sudoers.d/glass dest=/etc/sudoers.d/glass validate='/usr/sbin/visudo -cf %s'
+  template: src=sudo/sudoers.d/glass dest=/etc/sudoers.d/glass validate='/usr/sbin/visudo -cf %s' mode=0440
 
 - name: Sudo - Add an additional "sudoers" policy to allow "wheel" group members to use sudo
-  template: src=sudo/sudoers.d/wheel dest=/etc/sudoers.d/wheel validate='/usr/sbin/visudo -cf %s'
+  template: src=sudo/sudoers.d/wheel dest=/etc/sudoers.d/wheel validate='/usr/sbin/visudo -cf %s' mode=0440
 
