@@ -1,7 +1,7 @@
 ---
 # file: site.yml
 - hosts: all
-  user: '{{ user }}'
+  user: '{{ deploy_user }}'
   sudo: yes
   vars_files:
     - "vars/common.yml"
@@ -12,9 +12,9 @@
 
 #- include bt-tracker.yml
 #- include db-servers.yml
-- include: dhcp-servers.yml
+#- include: dhcp-servers.yml
 #- include dns-servers.yml
 #- include domain-controllers.yml
 #- include file-servers.yml
-- include: loadbalancers.yml
+#- include: loadbalancers.yml
 #- include web-servers.yml
