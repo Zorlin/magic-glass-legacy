@@ -1,6 +1,12 @@
 ---
 # name: Install and configure basic settings on a host on Debian 7/Ubuntu
 
+- name: Users - Create the 'glass' user for management purposes
+  user: name=glass shell=/bin/bash comment="Looking Glass Management User"
+
+- name: Groups - Add the 'glass' user to the sudoers user group.
+  user: name=glass groups=sudo
+
 - name: SSH - Add RSA key to the remote host
   authorized_key: user='{{ user }}' key="{{ lookup('file', '../../../../looking-glass-secrets/ssh/id_rsa.pub') }}"
 
