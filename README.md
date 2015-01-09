@@ -18,11 +18,23 @@ Goals
 
 Getting Started
 ===============
+Requirements
+------------
+For a single machine and orchestrator:
+* Ubuntu 12.04/14.04 or Debian 7 host machine
+* Ansible 1.7+ installed
+* sshpass installed
+
+For multiple machines and a single orchestrator:
+* Ubuntu 12.04/14.04 or Debian 7 host machine
+* Ansible 1.7+ installed
+* sshpass installed
+* Client machines running Ubuntu 12.04/14.04, Debian 7 or CentOS 6+
 
 Usage
 -----
 First-time usage:
-* Install Ansible and sshpass on your management workstation
+* Install Ansible 1.7+ and sshpass on your management workstation
 * Clone the Looking Glass repositories.
 
 `git clone https://github.com/getglass/looking-glass.git`
