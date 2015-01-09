@@ -51,4 +51,4 @@ Branch Info
 -----------
 * Releases are named after Cloud Cult songs.
 * The 'master' branch corresponds to the release actively under development.
-* Various release-X.Y branches exist for previous releases.
+* vX.Y.Z tags exist for previous releases.
