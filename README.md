@@ -30,8 +30,15 @@ First-time usage:
 `git clone https://github.com/getglass/looking-glass-secrets.git`
 
 * Follow the instructions for the looking-glass-secrets repository
-* Run 'ansible-playbook site.yml -i inventory --ask-pass --ask-sudo-pass' - Looking Glass will create the "glass" user according to your preferences (set in group_vars/all).
-* For future runs, simply use 'ansible-playbook site.yml -i inventory'. You can also add "--limit=hostgroup" to limit your runs to a specific set of hosts.
+* To create the "glass" user according to your preferences (set in group_vars/all), run Looking Glass in "bootstrap" mode.
+
+`ansible-playbook site.yml -i inventory --ask-pass --ask-sudo-pass`
+
+* For future runs, simply use this command.
+
+`ansible-playbook site.yml -i inventory` 
+
+* You can also add "--limit=hostgroup" to limit your runs to a specific set of hosts.
 
 Contact Us
 ==========
