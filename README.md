@@ -71,3 +71,8 @@ Branch Info
 * Releases are named after Cloud Cult songs.
 * The 'master' branch corresponds to the release actively under development.
 * vX.Y.Z tags exist for previous releases.
+
+TODO
+----
+This is a TODO list specific to the overall project (for tasks that do not belong in a particular module).
+* Create a playbook to automatically pull down the latest Ansible on Ubuntu/CentOS?
