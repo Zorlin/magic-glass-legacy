@@ -30,15 +30,15 @@ First-time usage:
 `git clone https://github.com/getglass/looking-glass-secrets.git`
 
 * Follow the instructions for the looking-glass-secrets repository
-* Run 'sudo adduser glass' and 'sudo adduser glass sudo' on machines you want to manage.
-* Run 'ansible-playbook site.yml -i inventory --ask-pass --ask-sudo-pass'
+* Run 'ansible-playbook site.yml -i inventory --ask-pass --ask-sudo-pass' - Looking Glass will create the "glass" user according to your preferences (set in group_vars/all).
+* For future runs, simply use 'ansible-playbook site.yml -i inventory'. You can also add "--limit=hostgroup" to limit your runs to a specific set of hosts.
 
 Contact Us
 ==========
 
 IRC
 ---
-You can find us on IRC at #lookingglass on irc.freenode.net. The IRC channel is a good place to get help or discuss development of Looking Glass.
+You can find us on IRC at #lookingglass on irc.freenode.net. The IRC channel is a good place to get help or discuss development of Looking Glass. However, as Looking Glass is not currently in wide distribution, the Gitter channel at the top of this README will be more helpful to you.
 
 Project Details
 ===============
