@@ -1,9 +1,9 @@
-Looking Glass
+Magic Glass
 ============
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/getglass/looking-glass?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/getglass/magic-glass?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Looking Glass is a set of technologies to create, manage and maintain a company's networks and services. 
+MagicK Glass is a set of technologies to create, manage and maintain a company's networks and services. 
 
 Core technologies
 -----------------
@@ -35,14 +35,14 @@ Usage
 -----
 First-time usage:
 * Install Ansible 1.7+ and sshpass on your management workstation
-* Clone the Looking Glass repositories.
+* Clone the Magic Glass repositories.
 
-`git clone https://github.com/getglass/looking-glass.git`
+`git clone https://github.com/getglass/magic-glass.git`
 
-`git clone https://github.com/getglass/looking-glass-secrets.git`
+`git clone https://github.com/getglass/magic-glass-secrets.git`
 
-* Follow the instructions for the looking-glass-secrets repository
-* To create the "glass" user according to your preferences (set in group_vars/all), run Looking Glass in "bootstrap" mode.
+* Follow the instructions for the magic-glass-secrets repository
+* To create the "glass" user according to your preferences (set in group_vars/all), run Magic Glass in "bootstrap" mode.
 
 `ansible-playbook site.yml -i inventory --ask-pass --ask-sudo-pass`
 
@@ -57,14 +57,14 @@ Contact Us
 
 IRC
 ---
-You can find us on IRC at #lookingglass on irc.freenode.net. The IRC channel is a good place to get help or discuss development of Looking Glass. However, as Looking Glass is not currently in wide distribution, the Gitter channel at the top of this README will be more helpful to you.
+You can find us on IRC at #getglass on irc.freenode.net. The IRC channel is a good place to get help or discuss development of Looking Glass. However, as Looking Glass is not currently in wide distribution, the Gitter channel at the top of this README will be more helpful to you.
 
 Project Details
 ===============
 
 License
 -------
-looking-glass and looking-glass-secrets are made available under the MIT license. See the [LICENSE](LICENSE) file for details.
+magic-glass and magic-glass-secrets are made available under the MIT license. See the [LICENSE](LICENSE) file for details.
 
 Branch Info
 -----------
