@@ -1,0 +1,11 @@
+---
+# name: Install and configure LizardFS on a host on Debian 7/Ubuntu
+
+- name: Apt - Add apt-key for LizardFS developers
+  apt_key: url=https://ftp-master.debian.org/keys/archive-key-6.0.asc state=present
+
+#- name: Apt - Add repo file to yum
+#  get_url: url=http://packages.lizardfs.com/yum/el7/lizardfs.repo dest=/etc/yum.repos.d/lizardfs.repo mode=0644
+#  notify:
+#  - update yum cache
+

@@ -1,0 +1,7 @@
+---
+# file: lizardfs.yml
+- hosts: lizardfs-common
+  user: '{{ user }}'
+  sudo: yes
+  roles:
+    - lizardfs-common

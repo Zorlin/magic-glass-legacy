@@ -11,6 +11,7 @@
     - base
 
 - include: web-servers.yml
+- include: lizardfs.yml
 #- include bt-tracker.yml
 #- include db-servers.yml
 #- include: dhcp-servers.yml
