@@ -35,6 +35,7 @@ Usage
 -----
 First-time usage:
 * Install Ansible 1.7+ and sshpass on your management workstation
+`sudo apt-get install ansible sshpass`
 * Clone the Magic Glass repositories.
 
 `git clone https://github.com/getglass/magic-glass.git`
