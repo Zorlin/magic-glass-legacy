@@ -43,7 +43,7 @@ First-time usage:
 
 `git clone https://github.com/getglass/magic-glass-secrets.git`
 
-* Follow the instructions for [https://github.com/getglass/magic-glass-secrets](the magic-glass-secrets repository)
+* Follow the instructions for (the magic-glass-secrets repository)[https://github.com/getglass/magic-glass-secrets]
 * To create the "glass" user according to your preferences (set in group_vars/all), run Magic Glass in "bootstrap" mode.
 
 `ansible-playbook site.yml -i inventory --ask-pass --ask-sudo-pass`
