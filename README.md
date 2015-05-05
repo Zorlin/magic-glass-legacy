@@ -58,7 +58,7 @@ Contact Us
 
 IRC
 ---
-You can find us on IRC at #getglass on irc.freenode.net. The IRC channel is a good place to get help or discuss development of Looking Glass. However, as Looking Glass is not currently in wide distribution, the Gitter channel at the top of this README will be more helpful to you.
+You can find us on IRC at #getglass on irc.freenode.net. The IRC channel is a good place to get help or discuss development of Magic Glass. However, as Magic Glass is not currently in wide distribution, the Gitter channel at the top of this README will be more helpful to you.
 
 Project Details
 ===============
