@@ -10,6 +10,7 @@
   roles:
     - base
 
+- include: web-servers.yml
 #- include bt-tracker.yml
 #- include db-servers.yml
 #- include: dhcp-servers.yml
@@ -17,4 +18,3 @@
 #- include domain-controllers.yml
 #- include file-servers.yml
 #- include: loadbalancers.yml
-#- include web-servers.yml
