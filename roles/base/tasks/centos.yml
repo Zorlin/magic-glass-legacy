@@ -3,7 +3,7 @@
 # Tested on CentOS 6
 
 - name: Users - Create the 'glass' user for management purposes
-  user: name=glass shell=/bin/bash comment="Looking Glass Management User"
+  user: name=glass shell=/bin/bash comment="Magic Glass Management User"
 
 - name: Groups - Add the 'glass' user to the sudoers user group.
   user: name=glass groups={{sudo_group}}
@@ -12,7 +12,7 @@
   yum: name=libselinux-python state=installed
 
 - name: SSH - Add RSA key to the remote host
-  authorized_key: user='{{ user }}' key="{{ lookup('file', '../../../../looking-glass-secrets/ssh/id_rsa.pub') }}"
+  authorized_key: user='{{ user }}' key="{{ lookup('file', '../../../../magic-glass-secrets/ssh/id_rsa.pub') }}"
 
 # Deprecated as both CentOS and Debian/Ubuntu currently include sudoers.d.
 #- name: Sudo - Create a new "sudoers" file after passing validation with visudo
