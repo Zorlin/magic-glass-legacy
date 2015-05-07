@@ -1,0 +1,16 @@
+---
+# name: Install and configure LizardFS on a host on Debian 7/Ubuntu
+
+- name: Apt - Add apt-key for LizardFS developers
+  apt_key: url="http://packages.lizardfs.com/lizardfs.key" state=present
+
+- name: Apt - Add apt repository for LizardFS
+  apt_repository: repo='deb http://packages.lizardfs.com/{{ansible_distribution | lower}}/{{ansible_distribution_release}} {{ansible_distribution_release}} main' state=present
+  notify:
+  - update apt cache
+
+- name: Apt - Install LizardFS client and tools
+  apt: name=lizardfs-master state=installed
+
+- name: Defaults - Enable LizardFS master
+  lineinfile: 'dest=/etc/default/lizardfs-master regexp=^LIZARDFSMASTER_ENABLE line="LIZARDFSMASTER_ENABLE=true"'

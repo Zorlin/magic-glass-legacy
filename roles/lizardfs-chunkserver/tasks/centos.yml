@@ -1,0 +1,9 @@
+---
+# name: Install and configure basic settings on a host on CentOS
+# Tested on CentOS 7
+
+- name: Yum - Add repo file to yum
+  get_url: url=http://packages.lizardfs.com/yum/el7/lizardfs.repo dest=/etc/yum.repos.d/lizardfs.repo mode=0644
+
+- name: Yum - Install LizardFS chunkserver
+  yum: name=lizardfs-chunkserver state=latest
