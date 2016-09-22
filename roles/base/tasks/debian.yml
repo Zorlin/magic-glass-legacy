@@ -1,5 +1,5 @@
 ---
-# name: Install and configure basic settings on a host on Debian 7/Ubuntu
+# name: Install and configure basic settings for Debian/Ubuntu on a target
 
 - name: Users - Create the 'glass' user for management purposes
   user: name=glass shell=/bin/bash comment="Magic Glass Management User"
