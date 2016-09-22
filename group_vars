@@ -1,1 +1,1 @@
-../magic-glass-secrets/group_vars
+./secrets/group_vars/
