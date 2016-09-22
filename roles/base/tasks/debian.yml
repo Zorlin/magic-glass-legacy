@@ -1,18 +1,15 @@
 ---
 # name: Install and configure basic settings for Debian/Ubuntu on a target
+# TODO: Possibly merge with CentOS.yml
 
 - name: Users - Create the 'glass' user for management purposes
   user: name=glass shell=/bin/bash comment="Magic Glass Management User"
 
 - name: Groups - Add the 'glass' user to the sudoers user group.
-  user: name=glass groups=sudo
+  user: name=glass groups='{{ sudo_group }}'
 
 - name: SSH - Add RSA key to the remote host
   authorized_key: user='{{ user }}' key="{{ lookup('file', '../../../../magic-glass-secrets/ssh/id_rsa.pub') }}"
-
-# Deprecated as both CentOS and Debian/Ubuntu currently include sudoers.d.
-#- name: Sudo - Create a new "sudoers" file after passing validation with visudo
-#  template: src=sudo/sudoers dest=/etc/sudoers validate='/usr/sbin/visudo -cf %s'
 
 - name: Sudo - Add an additional "sudoers" policy to allow for passwordless sudo
   template: src=sudo/sudoers.d/glass dest=/etc/sudoers.d/glass validate='/usr/sbin/visudo -cf %s' mode=0440
