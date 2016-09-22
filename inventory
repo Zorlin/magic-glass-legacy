@@ -1,15 +1,1 @@
-# file: inventory
-# This file contains the list of servers for your organization.
-# If you are using a development -> test -> production workflow
-# (highly recommended) you should use a separate inventory file for
-# each.
-
-[localhost]
-localhost
-
-[noop]
-ansible-centos6
-ansible-ubuntu1204
-
-[loadbalancers]
-[dhcp-servers]
+development
