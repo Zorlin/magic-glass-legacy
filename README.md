@@ -38,9 +38,9 @@ First-time usage:
 
 * Clone the Magic Glass repositories.
 
-`git clone --recursive https://github.com/getglass/magic-glass.git`
+`git clone https://github.com/getglass/magic-glass.git`
 
-`git clone --recursive https://github.com/getglass/magic-glass-secrets.git`
+`git clone https://github.com/getglass/magic-glass-secrets.git`
 
 * Follow the instructions for [the magic-glass-secrets repository](https://github.com/getglass/magic-glass-secrets)
 * To create the "glass" user according to your preferences (set in group_vars/all), run Magic Glass in "bootstrap" mode.
