@@ -10,12 +10,12 @@
   roles:
     - base
 
-- include: web-servers.yml
-- include: lizardfs.yml
-#- include bt-tracker.yml
-#- include db-servers.yml
+#- include: web-servers.yml
+#- include: lizardfs.yml
+#- include: bt-tracker.yml
+#- include: db-servers.yml
 #- include: dhcp-servers.yml
-#- include dns-servers.yml
-#- include domain-controllers.yml
-#- include file-servers.yml
+#- include: dns-servers.yml
+#- include: domain-controllers.yml
+#- include: file-servers.yml
 #- include: loadbalancers.yml
