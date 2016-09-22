@@ -1,7 +1,0 @@
----
-# file: loadbalancers.yml
-- hosts: loadbalancers
-  user: '{{ user }}'
-  sudo: yes
-  roles:
-    - loadbalancers
