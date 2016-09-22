@@ -2,10 +2,10 @@
 # file: site.yml
 - hosts: all
   user: '{{ deploy_user }}'
-  sudo: yes
+  become: true
   vars_files:
     - "vars/common.yml"
-#    - [ "vars/{{ansible_os_family}}.yml", "vars/common.yml" ]
+    - [ "vars/{{ansible_os_family}}.yml", "vars/common.yml" ]
 
   roles:
     - base

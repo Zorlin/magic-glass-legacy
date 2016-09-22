@@ -45,7 +45,7 @@ First-time usage:
 * Follow the instructions for [the magic-glass-secrets repository](https://github.com/getglass/magic-glass-secrets)
 * To create the "glass" user according to your preferences (set in group_vars/all), run Magic Glass in "bootstrap" mode.
 
-`ansible-playbook site.yml -i inventory --ask-pass --ask-sudo-pass`
+`ansible-playbook site.yml -i inventory --ask-pass --ask-become-pass`
 
 * For future runs, simply use this command.
 
