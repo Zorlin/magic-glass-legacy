@@ -21,20 +21,20 @@ Getting Started
 Requirements
 ------------
 For a single machine and orchestrator:
-* Ubuntu 12.04/14.04 or Debian 7 host machine
-* Ansible 1.7+ installed
+* Ubuntu 16.04 or Debian 8 orchestrator machine
+* Ansible 2.0+ installed
 * sshpass installed
 
 For multiple machines and a single orchestrator:
-* Ubuntu 12.04/14.04 or Debian 7 host machine
-* Ansible 1.7+ installed
+* Ubuntu 16.04 or Debian 8 orchestrator machine
+* Ansible 2.0+ installed
 * sshpass installed
-* Client machines running Ubuntu 12.04/14.04, Debian 7 or CentOS 6+
+* Client machines running Ubuntu 12.04, Debian 7 or CentOS 6, or newer.
 
 Usage
 -----
 First-time usage:
-* Install Ansible 1.7+ and sshpass on your management workstation
+* Install Ansible 2.0+ and sshpass on your management workstation
 
 * Clone the Magic Glass repositories.
 
