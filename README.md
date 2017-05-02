@@ -1,3 +1,5 @@
+DEPRECATED :(
+
 Magic Glass
 ============
 
