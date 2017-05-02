@@ -1,4 +1,5 @@
-DEPRECATED :(
+DEPRECATED. Do not use.
+============
 
 Magic Glass
 ============
